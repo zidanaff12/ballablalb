@@ -1,0 +1,347 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.2px;
+
+}
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.wrapper {
+    height: auto;
+    background-color: rgba(24, 26, 28, 0.7);
+    padding: 40px;
+    width: 30%;
+    border-radius: 30px;
+}
+
+/* LOGO -------------------------------------------------------------------------------------*/
+.logo {
+    text-align: center;
+}
+
+/* JUDUL -------------------------------------------------------------------------------------*/
+.cards-judul {
+    text-align: center;
+    padding: 20px;
+}
+
+.txt-judul {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.span-judul {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* FORM -------------------------------------------------------------------------------------*/
+.cards-form {
+    margin-top: 15px;
+}
+
+.form1, .form2{
+    display: flex;
+    flex-direction: column;
+}
+
+.form2 {
+    margin-top: 10px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.desc-form {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.span-form {
+    font-weight: 200;
+}
+
+.a-form {
+    text-decoration: none;
+    color: white;
+}
+
+/* BUTTON -------------------------------------------------------------------------------------*/
+.cards-button {
+    margin-top: 30px;
+}
+
+.cards-button > button {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    outline: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.span-button {
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: rgba(24, 26, 28, 0.7);
+}
+
+#button1 {
+    background-color: rgba(24, 26, 28, 0.7);
+    transform: scale(0.95);
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+
+#button1:hover {
+    transform: scale(1);
+}
+
+.icon-google {
+    padding-right: 10px;
+}
+
+/* REPONSIVE -------------------------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 320px) {
+    .wrapper {
+        width: 60%;
+    }
+
+    .cards-judul {
+        padding: 0;
+    }
+
+    svg {
+        width: 120px;
+        height: 44px;
+    }
+
+    .txt-judul {
+        font-size: 20px;
+    }
+    
+    .span-judul {
+        font-size: 10px;
+
+    }
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        font-size: 10px;
+        height: 25px;
+    }
+
+    #button1 {
+        height: 40px;
+        font-size: 15px;
+    }
+
+    #button2 {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .desc-form {
+        font-size: 8px;
+    }
+
+    .span-button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .wrapper {
+        width: 60%;
+    }
+
+    .cards-judul {
+        padding: 0;
+    }
+
+    svg {
+        width: 120px;
+        height: 44px;
+    }
+
+    .txt-judul {
+        font-size: 20px;
+    }
+    
+    .span-judul {
+        font-size: 10px;
+
+    }
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        font-size: 10px;
+        height: 25px;
+    }
+
+    #button1 {
+        height: 40px;
+        font-size: 15px;
+    }
+
+    #button2 {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .desc-form {
+        font-size: 9px;
+    }
+
+    .span-button {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .wrapper {
+        width: 60%;
+    }
+
+    .cards-judul {
+        padding: 0;
+    }
+
+    svg {
+        width: 140px;
+        height: 44px;
+    }
+
+    .txt-judul {
+        font-size: 25px;
+    }
+    
+    .span-judul {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 15px;
+        height: 40px;
+    }
+
+    #button1 {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    #button2 {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .desc-form {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        width: 50%;
+    }
+
+    .cards-judul {
+        padding: 10px;
+    }
+
+    svg {
+        width: 166px;
+        height: 44px;
+    }
+
+    .txt-judul {
+        font-size: 30px;
+    }
+    
+    .span-judul {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 15px;
+        height: 40px;
+    }
+
+    #button1 {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #button2 {
+        height: 50px;
+        font-size: 17px;
+    }
+
+    .desc-form {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .wrapper {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .wrapper {
+        width: 30%;
+    }
+
+}
+
+
+
+
+
